@@ -1,0 +1,102 @@
+3] OUTPUT
+Instances are:
+ [['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+ ['sunny' 'warm' 'high' 'strong' 'warm' 'same']
+ ['rainy' 'cold' 'high' 'strong' 'warm' 'change']
+ ['sunny' 'warm' 'high' 'strong' 'cool' 'change']]
+
+Target Values are:  ['yes' 'yes' 'no' 'yes']
+
+Initialization of specific_h and genearal_h
+
+Specific Boundary:  ['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+
+Generic Boundary:  [['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?']]
+
+Instance 1 is  ['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+Instance is Positive 
+Specific Bundary after  1 Instance is  ['sunny' 'warm' 'normal' 'strong' 'warm' 'same']
+Generic Boundary after  1 Instance is  [['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?']]
+
+Instance 2 is  ['sunny' 'warm' 'high' 'strong' 'warm' 'same']
+Instance is Positive 
+Specific Bundary after  2 Instance is  ['sunny' 'warm' '?' 'strong' 'warm' 'same']
+Generic Boundary after  2 Instance is  [['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?']]
+
+Instance 3 is  ['rainy' 'cold' 'high' 'strong' 'warm' 'change']
+Instance is Negative 
+Specific Bundary after  3 Instance is  ['sunny' 'warm' '?' 'strong' 'warm' 'same']
+Generic Boundary after  3 Instance is  [['sunny', '?', '?', '?', '?', '?'], ['?', 'warm', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', 'same']]
+
+Instance 4 is  ['sunny' 'warm' 'high' 'strong' 'cool' 'change']
+Instance is Positive 
+Specific Bundary after  4 Instance is  ['sunny' 'warm' '?' 'strong' '?' '?']
+Generic Boundary after  4 Instance is  [['sunny', '?', '?', '?', '?', '?'], ['?', 'warm', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?'], ['?', '?', '?', '?', '?', '?']]
+
+Final Specific_h: 
+['sunny' 'warm' '?' 'strong' '?' '?']
+Final General_h: 
+[['sunny', '?', '?', '?', '?', '?'], ['?', 'warm', '?', '?', '?', '?']]
+
+
+
+
+5] OUTPUT
+Input:
+[[0.66666667 1.        ]
+ [0.33333333 0.55555556]
+ [1.         0.66666667]]
+actual output:
+[[0.92]
+ [0.82]
+ [0.89]]
+predicted output: 
+ [[0.88090309]
+ [0.86524657]
+ [0.88343488]]
+
+
+6] OUTPUT
+0.9533333333333334
+
+[[50  0  0]
+[ 0 46  4]
+[ 0  3 47]]
+
+7] OUTPUT
+   x     y
+0   1  12.0
+1   1   3.0
+2  11  23.0
+3   2   5.0
+4   3   6.0
+5  12  57.0
+6  65  25.0
+7  12  45.9
+
+
+8] OUTPUT
+
+[[10  0  0]
+ [ 0  8  1]
+ [ 0  2  9]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        10
+           1       0.80      0.89      0.84         9
+           2       0.90      0.82      0.86        11
+
+    accuracy                           0.90        30
+   macro avg       0.90      0.90      0.90        30
+weighted avg       0.90      0.90      0.90        30
+
+
+
+
+
+
+
+
+
+
+
